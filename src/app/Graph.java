@@ -1,0 +1,18 @@
+package app;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Graph {
+
+    Map<Integer, List<Integer>> graph = new HashMap <>();
+
+    void addVertex(int vertex){
+        if(!graph.containsKey(vertex)){
+        graph.put(vertex, new ArrayList<>());
+    }
+
+}
+}

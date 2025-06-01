@@ -32,6 +32,12 @@ public class Graph {
         }
     }
 
+    void removeEdge(int source, int destination) {
+        if (graph.containsKey(source)) {
+            graph.get(source).remove(Integer.valueOf(destination));
+        }
+    }
+
     boolean hasVertex(int vertex) {
         return graph.containsKey(vertex);
     }

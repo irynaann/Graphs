@@ -29,9 +29,10 @@ public class Graph {
             for (List<Integer> n : graph.values()) {
                 n.remove(Integer.valueOf(3));
             }
-
         }
-
     }
 
+    boolean hasVertex(int vertex) {
+        return graph.containsKey(vertex);
+    }
 }

@@ -31,7 +31,7 @@ public class Main {
 
 
         graph.removeEdge(1, 5);
-        System.out.println("After removing edge 1 -> 4: " + graph.hasEdge(1, 5)); // false
+        System.out.println("After removing edge 1 -> 5: " + graph.hasEdge(1, 5)); // false
 
     }
 }

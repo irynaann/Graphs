@@ -35,4 +35,11 @@ public class Graph {
     boolean hasVertex(int vertex) {
         return graph.containsKey(vertex);
     }
+
+   boolean hasEdge(int source, int destination){
+      if(!graph.containsKey(source)){
+          return false;
+      }
+      return graph.get(source).contains(destination);
+   }
 }

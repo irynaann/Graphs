@@ -27,7 +27,7 @@ public class Graph {
             graph.remove(vertex);
 
             for (List<Integer> n : graph.values()) {
-                n.remove(Integer.valueOf(3));
+                n.remove(Integer.valueOf(vertex));
             }
         }
     }
